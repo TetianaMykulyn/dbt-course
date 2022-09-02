@@ -5,4 +5,5 @@
 }}
 
 select * 
-from dbt-course-361220.raw.customers
+from 
+{{ source('globalmart', 'customers') }}

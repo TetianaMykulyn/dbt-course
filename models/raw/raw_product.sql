@@ -5,4 +5,4 @@
 }}
 
 select * 
-from dbt-course-361220.raw.product
+from {{ source('globalmart', 'product') }}
